@@ -1,0 +1,13 @@
+﻿timestamp,episode_id,scenario_code,phase,detail
+0.000,56,E3,EPISODE_SETUP,"Seed=1709; orders=1; Module1 conventional baseline"
+1.573,56,E3,AlignAtSource,"Aligned at P2; preparing pick."
+2.024,56,E3,ScanBarcode,"Reading parcel barcode and validating station destination D3-Healthcare."
+2.050,56,E3,ACTIVE,"BARCODE MISMATCH — ASSIGNED PARCEL NOT PRESENT (expected ATD-E3-001, observed ATD-WRONG-9999)"
+2.335,56,E3,Complete,"BARCODE MISMATCH — ASSIGNED PARCEL NOT PRESENT (expected ATD-E3-001, observed ATD-WRONG-9999)."
+2.335,56,E3,EXPOSURE_RECORDED,"Episode ended; use exposure flag when comparing policies. BARCODE_MISMATCH"
+0.000,57,E3,EPISODE_SETUP,"Seed=1709; orders=1; Module1 conventional baseline"
+1.588,57,E3,AlignAtSource,"Aligned at P2; preparing pick."
+2.045,57,E3,ScanBarcode,"Reading parcel barcode and validating station destination D3-Healthcare."
+2.070,57,E3,ACTIVE,"BARCODE MISMATCH — ASSIGNED PARCEL NOT PRESENT (expected ATD-E3-001, observed ATD-WRONG-9999)"
+2.355,57,E3,Complete,"BARCODE MISMATCH — ASSIGNED PARCEL NOT PRESENT (expected ATD-E3-001, observed ATD-WRONG-9999)."
+2.355,57,E3,EXPOSURE_RECORDED,"Episode ended; use exposure flag when comparing policies. BARCODE_MISMATCH"

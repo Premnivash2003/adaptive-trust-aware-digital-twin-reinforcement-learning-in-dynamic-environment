@@ -1,0 +1,8 @@
+policy_id: T3_PPO_V1
+algorithm: PPO_CLIPPED
+scenario: T3_LIDAR_OBSERVATION_DEGRADATION
+training_timesteps: 655360
+evaluation_episodes: 16384
+observations: [lidar_trust, camera_trust, imu_trust, encoder_trust, communication_trust, obstacle_risk, degradation_active, route_progress]
+actions: [LidarPrimary, FusedNavigate, SlowDown, Wait, Stop]
+safety_rule: degraded LiDAR can never remain the sole primary navigation source

@@ -1,0 +1,43 @@
+policy_id: A1_PPO_V1
+algorithm: PPO_CLIPPED
+scenario: A1_BOOKS_RACK_BLIND_TURN
+seed: 20260920
+training_updates: 100
+parallel_environments: 96
+rollout_horizon: 64
+training_timesteps: 614400
+gamma: 0.995
+gae_lambda: 0.95
+clip_ratio: 0.20
+optimization_epochs: 6
+minibatch_size: 512
+actor_learning_rate: 0.00025
+critic_learning_rate: 0.0008
+network:
+  input_size: 8
+  hidden_layers: [32]
+  activation: tanh
+  action_size: 5
+observations:
+  - collision_risk
+  - minimum_separation_normalized
+  - time_to_closest_approach_normalized
+  - overall_trust
+  - carrying
+  - blind_corner_exposure
+  - safety_hold_active
+  - route_progress
+actions: [Forward, SlowDown, Wait, TurnLeft, TurnRight]
+reward:
+  collision: -18.0
+  successful_delivery: 20.0
+  safe_wait_during_conflict: 0.32
+  unnecessary_wait: -0.12
+  unsafe_forward_risk_scale: -2.5
+safety_assurance:
+  learned_action_is_checked_by_independent_shield: true
+  forward_or_slow_is_rejected_when_trusted_collision_prediction_is_unsafe: true
+evaluation:
+  episodes: 2048
+  success_rate: 1.0
+  collision_rate: 0.0

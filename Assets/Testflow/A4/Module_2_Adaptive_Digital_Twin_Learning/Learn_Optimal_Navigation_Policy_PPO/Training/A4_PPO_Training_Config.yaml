@@ -1,0 +1,8 @@
+policy_id: A4_PPO_V1
+algorithm: PPO_CLIPPED
+scenario: A4_RACK_RELOCATION_WRONG_PLACEMENT
+training_timesteps: 655360
+evaluation_episodes: 16384
+observations: [rack_moved, route_committed, target_divergence, twin_synchronized, inventory_trust, carrying, near_destination, route_progress]
+actions: [ContinueStale, Replan, WaitForSync, Rescan, VerifyPlacement]
+safety_rule: a relocated synchronized rack can never execute ContinueStale

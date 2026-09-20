@@ -1,0 +1,20 @@
+module,submodule,code_file,output_artifact,status
+1,Unity Warehouse Environment Modelling,UnityWarehouseEnvironmentModelling.cs,Warehouse scene model,COMPLETE
+1,Unity Warehouse Environment Simulation,UnityWarehouseEnvironmentSimulation.cs,A1 runtime episode,COMPLETE
+1,Sensor Simulation,SensorSimulation.cs,Unified observation sensor fields,COMPLETE
+1,Data Loggers,DataLoggers.cs,GroundTruth_Environment.csv and Unified_Observation.csv,COMPLETE
+1,Dataset Validation,DatasetValidation.cs,Dataset_Validation_Report.csv,COMPLETE
+2,Detect Environmental Changes,DetectEnvironmentalChangesRuntime.cs,Change score and classification,COMPLETE
+2,Synchronize Digital Twin EDATS,SynchronizeDigitalTwin_EDATS_Runtime.cs,EDATS synchronization events,COMPLETE
+2,Update Adaptive Digital Twin,UpdateAdaptiveDigitalTwinRuntime.cs,Updated twin state,COMPLETE
+2,Construct Context-Aware World Model,ConstructContextAwareWorldModel.cs,Context_World_State.csv,COMPLETE
+2,Learn Optimal Navigation Policy PPO,LearnOptimalNavigationPolicy_PPO.cs,A1_Trained_PPO_Policy.zip,COMPLETE
+2,Twin World State,Module2Manager.cs,Twin_World_State.csv,COMPLETE
+3,Trust Assessment Module,TrustAssessmentModule.cs,Per-source and fused trust values,COMPLETE
+3,Trust-Aware State Representation,TrustAwareStateRepresentation.cs,Trusted_State.csv,COMPLETE
+4,Optimize Secure Navigation Policy,OptimizeSecureNavigationPolicy.cs,Safe action distribution,COMPLETE
+4,Generate Intelligent Decisions,GenerateIntelligentDecisions.cs,Selected safety-verified action,COMPLETE
+4,Execute Safe Robot Navigation,A1ShadowSimulationDisplay.cs,Safe Display 3 replay,COMPLETE
+4,Robot Navigation Status,RobotNavigationStatus.cs,Robot_Navigation_Status.csv,COMPLETE
+4,Evaluate ATADTRL Performance,EvaluateATADTRLPerformance.cs,A1_Pipeline_Outcome.csv,COMPLETE
+4,Deploy ATADTRL in Unity Digital Twin,DeployATADTRLInUnityDigitalTwin.cs,Deployment readiness log,COMPLETE

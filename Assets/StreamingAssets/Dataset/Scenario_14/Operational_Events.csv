@@ -1,0 +1,5 @@
+﻿timestamp,episode_id,scenario_code,phase,detail
+0.000,39,T4,EPISODE_SETUP,"Seed=1715; orders=1; Module1 conventional baseline"
+1.546,39,T4,AlignAtSource,"Aligned at P2; preparing pick."
+2.002,39,T4,ScanBarcode,"Reading parcel barcode and validating station destination D3-Healthcare."
+2.308,39,T4,Pick,"Barcode ATD-T4-001 verified: Healthcare -> D3-Healthcare. Pick action started."

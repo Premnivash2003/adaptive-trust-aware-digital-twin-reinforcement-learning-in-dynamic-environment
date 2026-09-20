@@ -1,0 +1,12 @@
+﻿timestamp,episode_id,scenario_code,phase,detail
+0.000,59,E5,EPISODE_SETUP,"Seed=1711; orders=3; Module1 conventional baseline"
+5.285,59,E5,AlignAtSource,"Aligned at S1; preparing pick."
+5.737,59,E5,ScanBarcode,"Reading parcel barcode and validating station destination S1."
+6.046,59,E5,Pick,"Barcode EP0059-P01|DEST:S1|TASK:E5-T01 verified: General -> S1. Pick action started."
+9.230,59,E5,VerifyGrasp,"Verifying parcel grasp."
+9.681,59,E5,SecureForTransport,"Grasp verified; retracting parcel to rear transport deck."
+12.457,59,E5,NavigateToDestination,"Load secured: transporting to S1."
+12.474,59,E5,DISPATCHED,"Operational order released after verified AMR pickup"
+12.474,59,E5,ACTIVE,"S1 temporarily unavailable: legitimate warehouse operation in progress"
+30.493,59,E5,RECOVERED,"Station reopened after legitimate operation completed"
+40.335,59,E5,EXPOSURE_RECORDED,"Episode ended; use exposure flag when comparing policies. COLLISION_FORKLIFT"

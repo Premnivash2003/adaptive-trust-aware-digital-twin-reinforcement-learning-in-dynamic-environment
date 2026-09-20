@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7221f09470d572b409927b046fe31b9f, type: 3}
+  m_Name: EDATSConfig
+  m_EditorClassIdentifier: Assembly-CSharp::ATADTRL.Module2.EDATSConfig
+  overallChangeThreshold: 0.15
+  robotPositionThreshold: 0.15
+  robotVelocityThreshold: 0.2
+  humanPositionThreshold: 0.25
+  humanVelocityThreshold: 0.25
+  forkliftPositionThreshold: 0.4
+  forkliftVelocityThreshold: 0.3
+  parcelPositionThreshold: 0.15
+  positionNormalizationRange: 60
+  velocityNormalizationRange: 3
+  robotWeight: 1
+  humanWeight: 3
+  forkliftWeight: 4
+  parcelWeight: 2
+  stationWeight: 5
+  taskWeight: 4
+  rackWeight: 5
+  stationAvailabilityChangeIsCritical: 1
+  rackAvailabilityChangeIsCritical: 1
+  taskStageChangeIsCritical: 0
+  sensorLinkLossIsCritical: 0
